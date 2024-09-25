@@ -1,12 +1,85 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>WDD 131</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Dynamic Web Fundamentals - Peterson Cordeiro</title>
+  <meta name="author" content="Peterson Cordeiro" />
+  <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals - Peterson Cordeiro. Home page including details about Peterson Cordeiro and some Brazil facts" />
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-  <h1>Hello WDD131</h1>
-  <p>Testing</p>
+  <header>
+    <h1>WDD 131 - Dynamic Web Fundamentals - Peterson Cordeiro</h1>
+    <nav class="navigation">
+      <a href="https://linkedin.com" target="_blank" title="LinkedIn">LinkedIn</a>
+      <a href="https://byui.instructure.com/" target="_blank" title="I-Learn">I-Learn</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27" target="_blank"
+        title="Scripture">Scripture</a>
+      <a href="#" target="_blank" title="Final Project">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>About Me</h2>
+      <div class="person">
+        <p>My name is Peterson Cordeiro and I'm from Brazil. I live in Curitiba with my wife and I like to design things
+          and play videogames.
+        </p>
+        <img src="images/peterson.jpg" alt="Peterson">
+      </div>
+
+      <h3>Curitiba, Brazil</h3>
+      <div class="country">
+        <picture>
+          <img src="images/flag-brazil.jpg" alt="Flag of Brazil">
+          <figcaption>Official Flag of Brazil</figcaption>
+        </picture>
+        <p>Brazil, officially the Federative Republic of Brazil, is the largest and easternmost country in South America
+          and Latin America. It is the world's fifth-largest country by area and the seventh most populous. Its capital
+          is Brasília, and its most populous city is São Paulo. <a href="https://en.wikipedia.org/wiki/Brazil"
+            target="_blank">Wikipedia</a></p>
+      </div>
+    </section>
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li>
+          <a href="https://dev.to/" target="_blank">Dev.to Community</a>
+        </li>
+        <li>
+          <a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a>
+        </li>
+        <li>
+          <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a>
+        </li>
+        <li>
+          <a href="https://udemy.com" target="_blank">Udemy</a>
+        </li>
+        <li>
+          <a href="https://picsum.photos/" target="_blank">Lorem Picsum Image Placeholder</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p><span id="currentyear"></span> • Peterson Cordeiro • Brazil</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
 </body>
 
 </html>
