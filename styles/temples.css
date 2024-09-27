@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  text-rendering: geometricprecision;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+}
+
+header,
+main,
+footer {
+  padding: 2em;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 0.75em;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+a {
+  color: #002887;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85em;
+}
+
+.navigation {
+  display: flex;
+  gap: 16px;
+}
+
+.navigation a {
+  font-size: 1em;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  flex: 1 1 auto;
+  padding: 6px 12px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navigation a:hover {
+  background-color: rgb(5, 42, 109);
+}
+
+header,
+footer {
+  grid-column: 1 / 4;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #1d54b7;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+}
+
+main {
+  max-width: 1200px;
+  grid-column: 2;
+}
+
+.temple-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.temple-list figure img {
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.close-icon {
+  display: none;
+}
+
+@media screen and (max-width: 860px) {
+  .temple-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .mobile-menu {
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .mobile-menu:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+  }
+
+  .mobile-menu.close .close-icon {
+    display: block;
+  }
+
+  .mobile-menu.close .menu-icon {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .navigation.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #1d54b7;
+    padding: 1em;
+    box-sizing: border-box;
+    left: 0;
+    top: 70px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .temple-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
