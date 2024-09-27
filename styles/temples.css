@@ -96,10 +96,7 @@ footer p {
   text-align: center;
 }
 
-.mobile-menu {
-  display: none;
-}
-
+.mobile-menu,
 .close-icon {
   display: none;
 }
@@ -125,10 +122,7 @@ footer p {
     display: block;
   }
 
-  .mobile-menu.close .menu-icon {
-    display: none;
-  }
-
+  .mobile-menu.close .menu-icon,
   .navigation {
     display: none;
   }
