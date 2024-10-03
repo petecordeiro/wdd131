@@ -1,0 +1,167 @@
+:root {
+  --brazil-green: #006200;
+  --brazil-yellow: #e6e603;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr 100px;
+  height: 100vh;
+  justify-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  text-rendering: geometricprecision;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+h1,
+p {
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  margin-bottom: 16px;
+}
+
+header,
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: var(--brazil-green);
+  border-bottom: 5px solid var(--brazil-yellow);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  padding: 48px;
+  gap: 48px;
+}
+
+main > picture {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  margin: -48px;
+}
+
+picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.data,
+.weather {
+  width: 100%;
+  position: relative;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: #fff;
+  max-width: 300px;
+  height: fit-content;
+}
+
+.data {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.weather {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+  align-self: end;
+}
+
+.weather picture {
+  display: none;
+}
+
+.weather h2::after {
+  content: "⛅";
+  display: inline-block;
+  position: relative;
+  left: 10px;
+}
+
+footer {
+  background-color: var(--brazil-green);
+  border-top: 5px solid var(--brazil-yellow);
+}
+
+@media screen and (max-width: 720px) {
+  main {
+    background-image: none;
+    grid-template-rows: 1fr auto auto;
+    padding: 0;
+    gap: 16px;
+  }
+
+  main > picture {
+    display: block;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    max-height: 600px;
+    margin: 0;
+    border-bottom: 5px solid var(--brazil-yellow);
+  }
+
+  .data,
+  .weather {
+    grid-column: 1 / 3;
+    max-width: unset;
+  }
+
+  .data {
+    grid-row: 2;
+  }
+
+  .weather {
+    grid-row: 3;
+  }
+
+  .weather picture {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .weather picture img {
+    width: 160px;
+  }
+
+  .weather h2::after {
+    display: none;
+  }
+}

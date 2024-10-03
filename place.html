@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Peterson Cordeiro">
+  <meta name="description" content="Place WDD 131 exercise">
+  <title>Place - WDD 131 - Peterson Cordeiro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Brazil</h1>
+  </header>
+
+  <main>
+    <picture>
+      <source srcset="images/place-hero-large.webp" media="(min-width: 720px)">
+      <img src="images/place-hero-mobile.webp" alt="Brazil">
+    </picture>
+
+    <section class="data">
+      <h2>Data</h2>
+      <ul>
+        <li>
+          <strong>Area</strong>
+          <span>8,515,767 sq km</span>
+        </li>
+        <li>
+          <strong>Population</strong>
+          <span>203,080,756</span>
+        </li>
+        <li>
+          <strong>Capital</strong>
+          <span>Brasília</span>
+        </li>
+        <li>
+          <strong>Language</strong>
+          <span>Portuguese</span>
+        </li>
+        <li>
+          <strong>Currency</strong>
+          <span>Real</span>
+        </li>
+        <li>
+          <strong>Time Zone</strong>
+          <span>UTC−2 to −5</span>
+        </li>
+        <li>
+          <strong>Calling Code</strong>
+          <span>+55</span>
+        </li>
+        <li>
+          <strong>Internet TLD</strong>
+          <span>.br</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <picture>
+        <img src="images/weather.svg" alt="Weather icon">
+      </picture>
+      <ul>
+        <li>
+          <strong>Temperature</strong>
+          <span id="temperature">14 ºC</span>
+        </li>
+        <li>
+          <strong>Conditions</strong>
+          <span>Cloudy</span>
+        </li>
+        <li>
+          <strong>Wind</strong>
+          <span>5km/h</span>
+        </li>
+        <li>
+          <strong>Wind Chill</strong>
+          <span id="windChill">11 ºC</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p><span id="currentyear"></span> • Peterson Cordeiro • Brazil</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+
+</html>
