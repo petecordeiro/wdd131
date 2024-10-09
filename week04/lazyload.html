@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Peterson Cordeiro">
+  <meta name="description" content="Lazy Load WDD 131 exercise">
+  <title>Lazy Load - WDD 131 - Peterson Cordeiro</title>
+  <link rel="stylesheet" href="styles/lazyload.css">
+  <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Lazy Load</h1>
+  </header>
+
+  <main>
+    <img src="https://via.placeholder.com/400x600/" alt="Image 1" loading="lazy">
+    <img src="https://via.placeholder.com/400x605/" alt="Image 2" loading="lazy">
+    <img src="https://via.placeholder.com/400x610/" alt="Image 3" loading="lazy">
+    <img src="https://via.placeholder.com/400x615/" alt="Image 4" loading="lazy">
+    <img src="https://via.placeholder.com/400x620/" alt="Image 5" loading="lazy">
+    <img src="https://via.placeholder.com/400x625/" alt="Image 6" loading="lazy">
+  </main>
+
+  <footer>
+    <p><span id="currentyear"></span> • Peterson Cordeiro • Brazil</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+
+<script>
+  const countries = ["Canada", "Chili", "Colombia", "Croatia", "Costa Rica"];
+  const countriesLong = countries.filter((country) => country.length > 7);
+
+  console.log(countriesLong)
+</script>
+
+</html>
