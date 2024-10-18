@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Peterson Cordeiro">
+  <meta name="description" content="Temple picture album">
+  <title>Form - WDD 131 - Peterson Cordeiro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <form method="get" action="review.html">
+    <!-- Product Name -->
+    <div class="product-container">
+      <label for="productname">Product Name
+        <select name="productname" id="productname">
+          <option value="" disabled selected>Choose a Product...</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Rating -->
+    <div class="rating-container">
+      <h2>Overall Rating</h2>
+      <div class="rating">
+        <label for="onestar"><input type="radio" name="rating" value="onestar" id="onestar" required>&star;</label>
+        <label for="twostar"><input type="radio" name="rating" value="twostar" id="twostar" required>&star;
+          &star;</label>
+        <label for="threestar"><input type="radio" name="rating" value="threestar" id="threestar" required>&star; &star;
+          &star;</label>
+        <label for="fourstar"><input type="radio" name="rating" value="fourstar" id="fourstar" required>&star; &star;
+          &star; &star;</label>
+        <label for="fivestar"><input type="radio" name="rating" value="fivestar" id="fivestar" required>&star; &star;
+          &star; &star; &star;</label>
+      </div>
+    </div>
+
+    <!-- Date of Installation -->
+    <div class="date-container">
+      <label for="date">Date of Installation <input type="date" name="date" id="date" required></label>
+    </div>
+
+    <!-- Useful Features -->
+    <div class="features-container">
+      <h2>Which features did you find useful in the product? (Check all that apply)</h2>
+      <div class="features">
+        <label><input type="checkbox" name="durability" value="yes" id="durability">Durability</label>
+        <label><input type="checkbox" name="ease" value="yes" id="ease">Ease of Use</label>
+        <label><input type="checkbox" name="performance" value="yes" id="performance">Performance</label>
+        <label><input type="checkbox" name="design" value="yes" id="design">Design</label>
+      </div>
+    </div>
+
+    <!-- Written Review -->
+    <div class="written-container">
+      <label for="date">Written Review <span>(Optional)</span> <textarea name="writtenreview"
+          id="writtenreview"></textarea></label>
+    </div>
+
+    <!-- Your Name -->
+    <div class="name-container">
+      <label for="date">Your Name <span>(Optional)</span> <input type="text" name="yourname" id="yourname"></label>
+    </div>
+
+    <input type="submit" value="Post Review">
+
+  </form>
+
+  <footer>
+    <p><span id="currentyear"></span> • Peterson Cordeiro • Brazil</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+
+</html>
