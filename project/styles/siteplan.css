@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: darkblue;
+  --secondary-color: orangered;
+  --tertiary-color: #555;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  justify-items: center;
+  gap: 32px;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: geometricprecision;
+  -webkit-font-smoothing: antialiased;
+  color: var(--main-color);
+  background-color: #fff;
+}
+
+main {
+  grid-column: 2;
+  margin: 32px 0;
+}
+
+code {
+  color: rgb(116, 31, 0);
+}
+
+section {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+h1 {
+  margin-bottom: 32px;
+  color: var(--secondary-color);
+  font-weight: 900;
+}
+
+h2,
+h3,
+p {
+  margin-bottom: 12px;
+  color: var(--main-color);
+}
+
+h2 {
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5em;
+  color: var(--tertiary-color);
+  font-weight: 400;
+}
+
+.colors {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
+}
+
+.color {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.color > div {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+.color p {
+  margin-bottom: 0;
+}
+
+.color.main > div {
+  background-color: var(--main-color);
+}
+
+.color.secondary > div {
+  background-color: var(--secondary-color);
+}
+
+.color.tertiary > div {
+  background-color: var(--tertiary-color);
+}
+
+.fonts h1 {
+  margin-bottom: 12px;
+}
+
+.wireframes img {
+  max-width: 100%;
+  height: auto;
+}
