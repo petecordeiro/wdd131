@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Peterson Cordeiro">
+  <meta name="description" content="Contact The Game Store - Browse PlayStation, Nintendo Switch and Xbox games">
+  <title>Contact - The Game Store - WDD 131 - Peterson Cordeiro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <script src="scripts/mobilemenu.js" defer></script>
+  <script src="scripts/lastmodified.js" defer></script>
+  <script src="scripts/localstorage.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <h1>The Game Store</h1>
+    </a>
+    <div id="menu" class="mobile-menu">
+      <img src="images/menu.svg" alt="Open menu" class="menu-icon">
+      <img src="images/menu-close.svg" alt="Close menu" class="close-icon">
+    </div>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact</h2>
+
+    <div class="contact">
+      <form method="get" action="feedback.html">
+        <!-- Your Name -->
+        <div class="name-container">
+          <label for="yourname">Your Name <span>*</span> <input type="text" name="yourname" id="yourname"
+              required></label>
+        </div>
+
+        <!-- Your Email -->
+        <div class="email-container">
+          <label for="email">Your Email <span>*</span> <input type="email" name="email" id="email" required></label>
+        </div>
+
+        <!-- Message -->
+        <div class="message-container">
+          <label for="message">Message <textarea name="message" id="message"
+              placeholder="Write your message..."></textarea></label>
+        </div>
+
+        <input type="submit" value="Send Message">
+      </form>
+
+      <div class="address">
+        <address>
+          <p>10 Rockefeller Plaza, New York, NY</p>
+          <p>10020, United States</p>
+        </address>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1807848201947!2d-73.98205442259412!3d40.758048334793344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fee5ee15dd%3A0x7933b0d7213afb5!2sNintendo!5e0!3m2!1sen!2sbr!4v1729550578950!5m2!1sen!2sbr"
+          height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p><span id="currentyear"></span> • Peterson Cordeiro • Brazil</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+    <p>Number of visits: <span class="visits"></span></p>
+  </footer>
+</body>
+
+</html>
