@@ -19,7 +19,8 @@ img {
   gap: 32px;
 }
 
-.about img {
+.about img,
+.about picture {
   width: 100%;
   height: auto;
 }
