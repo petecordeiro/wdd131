@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content max-content;
-  gap: 32px;
+  gap: 52px;
 }
 
 form {
@@ -10,7 +10,7 @@ form {
   flex-direction: column;
   gap: 16px;
   grid-column: 1;
-  width: 80%;
+  width: 85%;
 }
 
 .address {
