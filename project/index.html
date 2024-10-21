@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Peterson Cordeiro">
+  <meta name="description" content="The Game Store - Browse PlayStation, Nintendo Switch and Xbox games">
+  <title>The Game Store - WDD 131 - Peterson Cordeiro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
+  <script src="scripts/localstorage.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>The Game Store</h1>
+    <div id="menu" class="mobile-menu">
+      <img src="images/menu.svg" alt="Open menu" class="menu-icon">
+      <img src="images/menu-close.svg" alt="Close menu" class="close-icon">
+    </div>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="navigation filters">
+      <a href="#" id="all" class="selected">All</a>
+      <a href="#" id="playstation">PlayStation</a>
+      <a href="#" id="switch">Switch</a>
+      <a href="#" id="xbox">Xbox</a>
+    </nav>
+
+    <h2>Games</h2>
+
+    <div class="game-list">
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p><span id="currentyear"></span> • Peterson Cordeiro • Brazil</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+    <p>Number of visits: <span class="visits"></span></p>
+  </footer>
+</body>
+
+</html>
