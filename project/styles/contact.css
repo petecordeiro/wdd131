@@ -75,6 +75,7 @@ label {
 .feedback h1 {
   color: #05ac00;
   font-weight: 700;
+  text-align: center;
 }
 
 @media screen and (max-width: 720px) {
